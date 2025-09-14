@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> दाउन्ने देवी मन्दिर</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#home"><img src="images/government-of nepal logo.png" style="height:60px; border-radius:50%;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">गृहपृष्ठ</a></li>
+                    <li><a href="ABOUT.html">हाम्रो बारेमा</a></li>
+                    <li><a href="HISTORY.html">इतिहास</a></li>
+                    <li><a href="EVENTS.html">कार्यक्रमहरू</a></li>
+                    <li><a href="GALLERY.html">ग्यालरी</a></li>
+                    <li><a href="CONTACT.html">सम्पर्क</a></li>
+                    <li><a href="bill.html">बिल बनाउने</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box" id="home" style="display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;text-align:left;">
+            <img src="images/img-1.jpg" alt="Daunna Temple" class="hero-image">
+            <div style="max-width:500px;">
+                <h1 style="text-align:left;"> दाउन्ने देवी मन्दिर</h1>
+                <p style="text-align:left;">दाउन्ने मन्दिरमा स्वागत छ, हाम्रो क्षेत्रको एक पवित्र धार्मिक स्थल, इतिहास र समुदायको प्रतीक।
+आत्मिक कार्यक्रम, सांस्कृतिक उत्सवहरू र समुदाय सेवामा सहभागी हुन हामीसँग जोडिनुहोस्।</p>
+                <a href="#donate" class="hero-btn" style="background:#d32f2f; border-color:#d32f2f;">दान गर्नुहोस्</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1>दाउन्ने मन्दिरको बारेमा</h1>
+        <p>दाउन्ने मन्दिर एक प्रतिष्ठित धार्मिक स्थल हो, जसले समृद्ध परम्परा, सुन्दर वास्तुकला र जीवित समुदायको प्रतिनिधित्व गर्छ। यो मन्दिर पूजा, पर्व र सामाजिक सेवाको केन्द्र हो, जहाँ सबैलाई स्वागत गरिन्छ।</p>
+    </section>
+
+    <!-- History Section -->
+    <section class="history" id="history">
+        <h1>इतिहास</h1>
+        <p>दाउन्ने मन्दिरको इतिहास शताब्दीयौँ पुरानो छ, जसका किंवदन्ती र कथाहरू पुस्तौँदेखि सुनिँदै आएका छन्। यो मन्दिर स्थानीय समुदाय र बाहिरका लागि आस्थाको केन्द्र, सांस्कृतिक सम्पदा र दृढताको प्रतीक रहँदै आएको छ।</p>
+    </section>
+
+    <!-- Events Section with Calendar -->
+    <section class="events" id="events">
+        <h1>कार्यक्रमहरू र पात्रो</h1>
+        <p>हाम्रा आगामी धार्मिक कार्यक्रम, पर्व र सामुदायिक भेलामा सहभागी हुनुहोस्। तलको पात्रोमा कार्यक्रमहरू हेर्नुहोस्:</p>
+        <iframe src="https://calendar.google.com/calendar/embed?src=en.nepalian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKathmandu" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h1>ग्यालरी</h1>
+        <div class="row">
+            <div class="gallery-col"><img src="images/img-1.jpg" alt="मन्दिर तस्बिर १"></div>
+            <div class="gallery-col"><img src="images/img-2.jpg" alt="मन्दिर तस्बिर २"></div>
+            <div class="gallery-col"><img src="images/img-3.jpg" alt="मन्दिर तस्बिर ३"></div>
+            <div class="gallery-col"><img src="images/siva-mandir.jpg" alt="शिव मन्दिर"></div>
+            <div class="gallery-col"><img src="images/siva-mandir-2.jpg" alt="शिव मन्दिर २"></div>
+            <div class="gallery-col"><img src="images/award-1.jpg" alt="मन्दिर पुरस्कार"></div>
+        </div>
+    </section>
+
+    <!-- Bill Making Section -->
+    <section class="bill" id="bill">
+        <h1>बिल बनाउने</h1>
+        <form class="bill-form">
+            <label for="name">नाम:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="purpose">उद्देश्य:</label>
+            <input type="text" id="purpose" name="purpose" required>
+            <label for="amount">रकम (रु):</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">बिल बनाउनुहोस्</button>
+        </form>
+        <div id="bill-output"></div>
+    </section>
+
+    <!-- Contact Section with Map -->
+    <section class="contact" id="contact">
+        <h1>सम्पर्क गर्नुहोस्</h1>
+        <p>स्थान: दाउन्ने मन्दिर, नवलपरासी, नेपाल</p>
+        <p>इमेल: info@daunnatemple.org | फोन: +९७७-१-१२३४५६७</p>
+        <div style="width: 100%; height: 300px;">
+            <iframe src="https://www.google.com/maps?q=daunna+temple+nawalparasi&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Donation Button (Floating) -->
+    <a href="#donate" class="donate-btn" id="donate" style="position:fixed;bottom:30px;right:30px;z-index:1000;background:#d32f2f;color:#fff;padding:15px 30px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 2px 8px rgba(0,0,0,0.2);">दान गर्नुहोस्</a>
+
+    <!-- Footer -->
+    <section class="Footer">
+        <h4>दाउन्ने मन्दिरको बारेमा</h4>
+        <p>दाउन्ने मन्दिर, नवलपरासी, नेपालमा अवस्थित, आस्था, संस्कृति र समुदायको केन्द्र हो। हाम्रो आध्यात्मिक यात्रा र सांस्कृतिक उत्सवमा सबैलाई स्वागत छ।</p>
+        <div class="icons"></div>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-youtube"></i>
+        <p>All Right Reserve By Prasan Sapkota </p>
+        <!-- <p>सबै अधिकार दाउन्ने मन्दिरद्वारा सुरक्षित</p> -->
+    </section>
+
+    <!-- JavaScript for Toggle Menu and Bill Making -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0px";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        // Bill Making Form
+        document.querySelector('.bill-form').onsubmit = function(e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var purpose = document.getElementById('purpose').value;
+            var amount = document.getElementById('amount').value;
+            document.getElementById('bill-output').innerHTML =
+                `<div style='margin-top:20px;padding:15px;border:1px solid #ccc;background:#f9f9f9;'>` +
+                `<h3>बिल रसिद</h3>` +
+                `<p><strong>नाम:</strong> ${name}</p>` +
+                `<p><strong>उद्देश्य:</strong> ${purpose}</p>` +
+                `<p><strong>रकम:</strong> रु ${amount}</p>` +
+                `<p><em>तपाईंको योगदानको लागि धन्यवाद!</em></p>` +
+                `</div>`;
+        };
+    </script>
+</body>
+</html>
